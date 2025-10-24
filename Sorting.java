@@ -9,21 +9,6 @@ class SortSearch {
         this.n = data.length;
     }
 
-    // =================== BUBBLE SORT ===================
-    public void bubbleSort() {
-        int z = 0;
-        for (int i = n - 1; i > 0; i--) {
-            System.out.print("Lintasan " + (++z) + ": ");
-            for (int j = 0; j < i; j++) {
-                if (data[j] > data[j + 1]) {
-                    int temp = data[j];
-                    data[j] = data[j + 1];
-                    data[j + 1] = temp;
-                }
-            }
-            show();
-        }
-    }
 
     // =================== SELECTION SORT ===================
     public void selectionSort() {
@@ -47,7 +32,22 @@ class SortSearch {
     }
 
     // =================== INSERTION SORT ===================
+    public void insertionSort() {
+        int z = 0;
+        for (int i = 1; i < n; i++) {
+            int key = data[i];
+            int j = i - 1;
 
+            while (j >= 0 && data[j] > key) {
+                data[j + 1] = data[j];
+                j--;
+            }
+            data[j + 1] = key;
+
+            System.out.print("Lintasan " + (++z) + ": ");
+            show();
+        }
+    }
 
     // =================== TAMPILKAN DATA ===================
     public void show() {
