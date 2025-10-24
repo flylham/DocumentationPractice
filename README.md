@@ -20,7 +20,7 @@ Proyek *DocumentationPractice* dibuat untuk mempelajari dan mempraktikkan cara m
 ## 📂 Struktur Folder
 DocumentationPractice/
 ├── src/
-│   └── Main.java
+│   └── Sorting.java
 └── README.md
 
 ## 👨‍💻 Kontributor

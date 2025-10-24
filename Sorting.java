@@ -47,22 +47,7 @@ class SortSearch {
     }
 
     // =================== INSERTION SORT ===================
-    public void insertionSort() {
-        int z = 0;
-        for (int i = 1; i < n; i++) {
-            int key = data[i];
-            int j = i - 1;
 
-            while (j >= 0 && data[j] > key) {
-                data[j + 1] = data[j];
-                j--;
-            }
-            data[j + 1] = key;
-
-            System.out.print("Lintasan " + (++z) + ": ");
-            show();
-        }
-    }
 
     // =================== TAMPILKAN DATA ===================
     public void show() {
